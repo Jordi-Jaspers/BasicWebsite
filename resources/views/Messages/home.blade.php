@@ -218,7 +218,7 @@
 									<a href="" class="image fit"><img src="images/pic11.png"
 											alt="" /></a>
 									<header>
-										<h3>TravelCompanion Webapplication(Laravel, C#, Python)</h3>
+										<h3>Currencyexchange (Python FLASK)</h3>
 									</header>
 								</article>
 							</div>
