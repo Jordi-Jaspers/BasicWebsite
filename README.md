@@ -1,3 +1,5 @@
+# Part 1:  Laravel (BasicWebsite)
+
 # Author:  
 Jordi Jaspers  
   
@@ -8,6 +10,7 @@ Jordi Jaspers
 This is a 3-part project consisting of a REST & SOAP service made from different coding languages. This excercise is trying to give us knowledge about different methods of building a cloud-service. Part 1 consists of a Laravel webproject. In this part of the project got in touch with PHP, HTML, CSS, JS, Blade programming. The main objective is to host every created service on a Docker-container.
   
 # What I Learned:  
+*  Command-line programming
 *  XAMPP DataBases
 * Virtual Enironments in python
 * Python REST API with FLASK
