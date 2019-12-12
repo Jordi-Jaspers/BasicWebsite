@@ -215,8 +215,8 @@
 									</header>
 								</article>
 								<article class="item">
-									<a href="" class="image fit"><img src="images/pic11.png"
-											alt="https://github.com/Jordi-Jaspers/CurrencyExchanger" /></a>
+									<a href="https://github.com/Jordi-Jaspers/CurrencyExchanger" class="image fit"><img src="images/pic11.png"
+											alt="" /></a>
 									<header>
 										<h3>Currencyexchange (Python FLASK)</h3>
 									</header>
