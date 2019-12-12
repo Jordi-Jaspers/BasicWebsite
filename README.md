@@ -15,6 +15,11 @@ This is a 3-part project consisting of a REST & SOAP service made from different
 * HTML, CSS and PHP development
 * Laravel Web development with Blade
 * Docker to host the webapplication
+* Javascript Basics
+* Authentications and roles
+* Mysql database connecting and hosting
+* Different new python methods and imports
+* ...
   
 # TODO-List:  
 #### Part 1:  Laravel (BasicWebsite)
