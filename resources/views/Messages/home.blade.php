@@ -240,7 +240,7 @@
 						<p>This web-application is called "CurrencyExchanger" and makes use of the Rapid Currency API. The applet is built with different REST & SOAP-services</p>
 
 						<footer>
-								<a href="/currencyexchanger" class="button scrolly">Go to Web-Application</a>
+								<a href="http://127.0.0.1:5000/CurrencyExchanger" class="button scrolly">Go to Web-Application</a>
 						</footer>
 
 					</div>
