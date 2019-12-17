@@ -1,31 +1,33 @@
-# Part 1:  Laravel (BasicWebsite)
+# Laravel (BasicWebsite)
 
-# Author:  
-Jordi Jaspers  
+## Biography  
+**Authors:**
+Jordi Jaspers [[Github](https://github.com/Jordi-Jaspers "Github Page"), [Linkedin](https://www.linkedin.com/in/jordi-jaspers/ "Linkedin Page")] 
   
-# Date of initial commit:  
-14/11/2019   
-  
-# CLOUD_Project [Biography]:  
+**Date of initial commit:** 
+14/11/2019  
+
+**Description:**
 This is a 3-part project consisting of a REST & SOAP service made from different coding languages. This excercise is trying to give us knowledge about different methods of building a cloud-service. Part 1 consists of a Laravel webproject. In this part of the project got in touch with PHP, HTML, CSS, JS, Blade programming. The main objective is to host every created service on a Docker-container.
+
+## What We Learned
+ * Command-line programming
+ *  XAMPP DataBases
+ * Virtual Enironments in python
+ * Python REST API with FLASK
+ * Use of RapidAPI 
+ * HTML, CSS and PHP development
+ * Laravel Web development with Blade
+ * Docker to host the webapplication
+ * Javascript Basics
+ * Authentications and roles
+ * Mysql database connecting and hosting
+ * Different new python methods and imports
+ * Troubleshoot with docker containers and SQLAlchemy
+ * ...
   
-# What I Learned:  
-*  Command-line programming
-*  XAMPP DataBases
-* Virtual Enironments in python
-* Python REST API with FLASK
-* Use of RapidAPI 
-* HTML, CSS and PHP development
-* Laravel Web development with Blade
-* Docker to host the webapplication
-* Javascript Basics
-* Authentications and roles
-* Mysql database connecting and hosting
-* Different new python methods and imports
-* Troubleshoot with docker containers and SQLAlchemy
-* ...
-  
-# TODO-List:  
+
+## TODO-List:  
 #### Part 1:  Laravel (BasicWebsite)
 -   Build a basic central webapp in Laravel -> done
 -   Use Authentication -> done
@@ -50,13 +52,13 @@ This is a 3-part project consisting of a REST & SOAP service made from different
 -   Create an idea...
 - ...
 
-# Troubleshooting:   
+## Troubleshooting:   
 -   Can't connect different databases through docker for other services like python-RESTFULL... --> change host from "127.0.0.1" to match the container name of the database
 
-# Project Information (Dutch):  
+## Project Information (Dutch):  
 1. Service Oriented Applicatie bouwen
     - Services bouwen
-        * REST	
+        * REST    
             Laravel
             Python – Flask RESTful
         * SOAP
@@ -77,7 +79,7 @@ This is a 3-part project consisting of a REST & SOAP service made from different
     - Docker (op Marcel)
     - Commerciële provider: Azure, AWS, Google, …
 
- # Grading of  the project (Dutch) :  
+## Grading of  the project (Dutch) :  
 The grading system will be writen in dutch, because it is a copy-paste of the given file for this course.
 
 | Project CLOUD Computing (33,33%)                                                            |     /20     | 
@@ -104,7 +106,7 @@ The grading system will be writen in dutch, because it is a copy-paste of the gi
 |niet deployen op Azure/Amazon                                   |       5         |
 |geen SOAP-service oproepen                                   |          2      |
 
-# References:  
+## References:  
  * POSTGREPL: https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb
  * Python REST: https://www.codementor.io/dongido/how-to-build-restful-apis-with-python-and-flask-fh5x7zjrx
  * Python REST: https://www.youtube.com/channel/UCK8YsKv4-N6ItZfzEyKlI6A
@@ -115,4 +117,3 @@ The grading system will be writen in dutch, because it is a copy-paste of the gi
  * Docker vs Laravel: https://laradock.io/documentation/
  * Everything about Laravel: https://laravel.com/docs/5.7/verification
  * Troubleshooting: https://stackoverflow.com/
-
