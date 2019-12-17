@@ -150,7 +150,7 @@
 							<h2>Portfolio</h2>
 						</header>
 
-						<p>A few project I made throughout the years. To see the source code just click on the image. This will link you back to my Github page.</p>
+						<p>A few project I made throughout the years. To review the source code, click on the image. This will route you to the corresponding Github repository.</p>
 
 						<div class="row">
 							<div class="col-4 col-12-mobile">
