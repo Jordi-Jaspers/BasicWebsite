@@ -215,10 +215,10 @@
 									</header>
 								</article>
 								<article class="item">
-									<a href="https://github.com/Jordi-Jaspers/CurrencyExchanger" class="image fit"><img src="images/pic11.png"
+									<a href="https://github.com/Jordi-Jaspers/Raspberry_Smart_Mirror" class="image fit"><img src="images/pic12.jpg"
 											alt="" /></a>
 									<header>
-										<h3>Currencyexchange (Python FLASK)</h3>
+										<h3>Smart-Mirror (Node.js)</h3>
 									</header>
 								</article>
 							</div>
