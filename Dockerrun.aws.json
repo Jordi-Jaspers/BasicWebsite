@@ -1,0 +1,173 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+      {
+        "essential": true,
+        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/php-fpm:latest",
+        "memory": 256,
+        "mountPoints": [
+          {
+            "containerPath": "/var/www",
+            "sourceVolume": "application"
+          },
+          {
+            "containerPath": "/usr/local/var/log",
+            "sourceVolume": "awseb-logs-php-fpm"
+          }
+        ],
+        "name": "php-fpm"
+      },
+      {
+        "essential": true,
+        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/nginx:latest",
+        "links": [
+          "php-fpm"
+        ],
+        "memory": 512,
+        "mountPoints": [
+          {
+            "containerPath": "/var/www",
+            "sourceVolume": "application"
+          },
+          {
+            "containerPath": "/var/log/nginx",
+            "sourceVolume": "awseb-logs-nginx"
+          }
+        ],
+        "name": "nginx",
+        "portMappings": [
+          {
+            "containerPort": 80,
+            "hostPort": 80
+          }
+        ]
+      },
+      {
+        "essential": true,
+        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/phpmyadmin:latest",
+        "links": [
+          "phpmyadmin"
+        ],
+        "memory": 512,
+        "mountPoints": [
+          {
+            "containerPath": "/var/www",
+            "sourceVolume": "application"
+          },
+          {
+            "containerPath": "/var/log/phpmyadmin",
+            "sourceVolume": "awseb-logs-phpmyadmin"
+          }
+        ],
+        "name": "phpmyadmin",
+        "portMappings": [
+          {
+            "containerPort": 8080,
+            "hostPort": 8080
+          }
+        ]
+      },
+      {
+        "essential": true,
+        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/workspace:latest",
+        "links": [
+          "workspace"
+        ],
+        "memory": 512,
+        "mountPoints": [
+          {
+            "containerPath": "/var/www",
+            "sourceVolume": "application"
+          },
+          {
+            "containerPath": "/var/log/workspace",
+            "sourceVolume": "awseb-logs-workspace"
+          }
+        ],
+        "name": "workspace",
+        "portMappings": [
+          {
+            "containerPort": 2222,
+            "hostPort": 2222
+          }
+        ]
+      },
+      {
+        "essential": true,
+        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/mysql:latest",
+        "links": [
+          "mysql"
+        ],
+        "memory": 512,
+        "mountPoints": [
+          {
+            "containerPath": "/var/www",
+            "sourceVolume": "application"
+          },
+          {
+            "containerPath": "/var/log/mysql",
+            "sourceVolume": "awseb-logs-mysql"
+          }
+        ],
+        "name": "mysql",
+        "portMappings": [
+          {
+            "containerPort": 3306,
+            "hostPort": 3306
+          }
+        ]
+      },
+      {
+        "essential": true,
+        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/redis:latest",
+        "links": [
+          "redis"
+        ],
+        "memory": 512,
+        "mountPoints": [
+          {
+            "containerPath": "/var/www",
+            "sourceVolume": "application"
+          },
+          {
+            "containerPath": "/var/log/redis",
+            "sourceVolume": "awseb-logs-redis"
+          }
+        ],
+        "name": "redis",
+        "portMappings": [
+          {
+            "containerPort": 6379,
+            "hostPort": 6379
+          }
+        ]
+      },
+      {
+        "essential": true,
+        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/dind:latest",
+        "links": [
+          "dind"
+        ],
+        "memory": 512,
+        "mountPoints": [
+          {
+            "containerPath": "/var/www",
+            "sourceVolume": "application"
+          },
+          {
+            "containerPath": "/var/log/dind",
+            "sourceVolume": "awseb-logs-dind"
+          }
+        ],
+        "name": "docker-in-docker"
+      }
+    ],
+    "volumes": [
+      {
+        "host": {
+          "sourcePath": "/var/app/current/application"
+        },
+        "name": "application"
+      }
+    ]
+  }
