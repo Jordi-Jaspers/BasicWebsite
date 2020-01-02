@@ -326,6 +326,7 @@
 						@endif
 					</div>		
 
+					<!-- From Handler for the MessageControler, uses authentication and unique email.-->
 					{!! Form::open(['url' => 'home/submit']) !!}
 						<div class="row">
 							<div class="col-6 col-12-mobile">
@@ -372,6 +373,5 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
