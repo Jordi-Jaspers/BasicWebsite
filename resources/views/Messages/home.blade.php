@@ -75,10 +75,10 @@
 					<ul>
 						@guest	
 						@if (Route::has('register'))
-							<li><a><span id="login-error" class="icon solid fa-times-circle login-error">Currently not logged in!</span ></a></li>
+							<li><a><span id="login-error" class="icon solid fa-times-circle login-error">Not logged in!</span ></a></li>
 						@endif
 						@else
-						<li><a><span id="login-confirmation" class="icon solid fa-check login-confirmation">You are logged in!</span ></a></li>
+						<li><a><span id="login-confirmation" class="icon solid fa-check login-confirmation">Logged in!</span ></a></li>
 						@endguest
 					</ul>
 
