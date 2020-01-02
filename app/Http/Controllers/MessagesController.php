@@ -20,7 +20,7 @@ class MessagesController extends Controller
     public function submit(Request $request){
         $this->validate($request, [
             'name' => 'required',
-            'email' => 'required|email|unique:users,email',
+            'email' => 'required|email',
             'message' => 'required'
         ]);
 

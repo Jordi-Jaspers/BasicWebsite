@@ -341,8 +341,7 @@
 									{{Form::textarea('message', ' ', ['class' => 'form-control',  'placeholder' => 'Enter your message'])}}	
 							</div>
 							<div class="col-12">
-									{{Form::submit('Submit',  ['class' => 'btn'])}}	
-									<form method="post" id="myForm" action="dynaform.php" onSubmit="alert('Thank you for your feedback.');" >
+									{{Form::submit('Submit',  ['class' => 'btn'])}}
 							</div>
 						</div>
 						{!! Form::close() !!}
