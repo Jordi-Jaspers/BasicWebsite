@@ -3,7 +3,7 @@
     "containerDefinitions": [
       {
         "essential": true,
-        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/php-fpm:latest",
+        "image": "532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/php-fpm:latest",
         "memory": 256,
         "mountPoints": [
           {
@@ -19,7 +19,7 @@
       },
       {
         "essential": true,
-        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/nginx:latest",
+        "image": "532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/nginx:latest",
         "links": [
           "php-fpm"
         ],
@@ -44,7 +44,7 @@
       },
       {
         "essential": true,
-        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/phpmyadmin:latest",
+        "image": "532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/phpmyadmin:latest",
         "links": [
           "phpmyadmin"
         ],
@@ -69,7 +69,7 @@
       },
       {
         "essential": true,
-        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/workspace:latest",
+        "image": "532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/workspace:latest",
         "links": [
           "workspace"
         ],
@@ -94,7 +94,7 @@
       },
       {
         "essential": true,
-        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/mysql:latest",
+        "image": "532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/mysql:latest",
         "links": [
           "mysql"
         ],
@@ -119,7 +119,7 @@
       },
       {
         "essential": true,
-        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/redis:latest",
+        "image": "532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/redis:latest",
         "links": [
           "redis"
         ],
@@ -144,7 +144,7 @@
       },
       {
         "essential": true,
-        "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/basicwebsite/dind:latest",
+        "image": "532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/dind:latest",
         "links": [
           "dind"
         ],

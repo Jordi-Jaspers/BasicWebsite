@@ -7,14 +7,34 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+            <!-- Authentication -->
+            @guest	
+            @if (Route::has('register'))
+                <div class="card-header">{{ __('Error 403: Forbidden - User not authorised') }}</div>
+            @endif
+            @else
+            <div class="card-header">{{ __('Admin Access: Show all received messages.') }}</div>
+            @endguest  
 
                 <div class="card-body">
                     <!-- Messages -->
                     <div id="message">
                         <section id="messages" class="one">
                             <div class="container">
-
+                            
+                            <!-- Authentication -->
+                            @guest	
+                            @if (Route::has('register'))
+                            <center><h2>Please log in before proceeding</h2></center>
+                            <div class="form-group row mb-0">
+                                <div class="col-md-8 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        <a class="nav-link" href="{{ route('login') }}" style="color: #ffffff;"> {{ __('Proceed To Login Page') }} </a>
+                                    </button>
+                                </div>
+                            </div>  
+                            @endif
+                            @else
                                 <header>
                                     <h2>Messages</h2>
                                 </header>
@@ -30,7 +50,8 @@
                                         <div> ----------------- </div>
                                     @endforeach   
                                 @endif   
-                            </div>   
+                            </div> 
+                            @endguest  
                         </section>  
                     </div>                
                 </div>
