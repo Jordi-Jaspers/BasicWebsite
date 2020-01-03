@@ -81,7 +81,7 @@ docker push 532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/nginx:late
 -   Consumed in C3 webservice as test -> done!
 -   Consuming the service in a Java project (Bonuspoints: Use Other service) -> not yet!
 -   Dockerize the part 3 (Bonuspoint: everything Consistent in Docker) -> Done!
--   Deploy everything in AWS Services -> not yet!
+-   Deploy everything in AWS Services -> done!
 
 ## Troubleshooting:   
 -   Can't connect different databases through docker for other services like python-RESTFULL... --> change host from "127.0.0.1" to match the container name of the database
@@ -174,3 +174,4 @@ The grading system will be writen in dutch, because it is a copy-paste of the gi
  * Connect SSH instance: <https://eu-west-2.console.aws.amazon.com/ec2/v2/home?region=eu-west-2#Instances:sort=instanceId>
  * Deploy via EC2: <https://dzone.com/articles/how-to-deploy-laravel-application-on-aws-ec2-the-r>
  * EBS tutorial: <https://medium.com/faun/deploy-a-docker-ized-laravel-application-to-aws-ecs-with-codebuild-4b0e388f4f53>
+ * Multicontainer docker on AWS: <https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-laravel-tutorial.html>
