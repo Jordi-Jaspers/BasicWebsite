@@ -64,6 +64,7 @@ docker push 532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/nginx:late
 -   Use a good Mark-up CSS Text-code -> done!
 -   Create a redirect for the ADMIN_ONLY to see the messages. -> done!
 -   Added Blogpost with delete, create and edit functions. -> done!
+-   Added good security measurements! -> done!
 -   ...
 
 #### Part 2:  Python-REST (Currencyexchanger)

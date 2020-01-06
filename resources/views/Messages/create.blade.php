@@ -67,7 +67,7 @@
                                         </div>
                                         <div class="col-12" id = "submitPostbtn">
                                         <br>
-                                                {{Form::submit('Edit Blog',  ['class' => 'btn btn-primary'])}}
+                                                {{Form::submit('Create Blog',  ['class' => 'btn btn-primary'])}}
                                         </div>
                                     </div>
                                 {!! Form::close()!!}
