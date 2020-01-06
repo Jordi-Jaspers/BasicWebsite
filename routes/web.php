@@ -12,9 +12,18 @@
 */
 
 Route::get('/home' , 'MessagesController@home');
-Route::post('/home/submit', 'MessagesController@submit');
 Route::get('/messages', 'MessagesController@getMessages');
-Auth::routes();
+Route::post('/home/submit', 'MessagesController@submit');
+
+Route::get('/blog/create', 'BlogController@createPost');
+Route::get('/blog', 'BlogController@getBlog');
+Route::post('/blog/submit', 'BlogController@submit');
+
+Route::name('edit_blog') -> get('/blog/edit/{id}', 'BlogController@edit');
+Route::name('update_blog') -> put('/blog/update/{id}', 'BlogController@update');
+Route::name('delete_blog') -> delete('/blog/delete/{id}', 'BlogController@delete');
 
 Route::get('/dashboard', 'DashboardController@index');
 Route::get('/logout', 'Auth\LoginController@logout');
+
+Auth::routes();

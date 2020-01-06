@@ -56,6 +56,21 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                                    <a class="dropdown-item" href="/blog/create">
+                                        Create Blogpost
+                                    </a>
+
+                                    @if (Auth::user()->id == 1)
+										<a class="dropdown-item" href="/messages" id="messages-link">
+										<span class="icon solid fa-inbox">Messages</span>
+										</a>
+									@endif	
+
+                                    <a class="dropdown-item" href="/blog">
+                                        Blog
+                                    </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

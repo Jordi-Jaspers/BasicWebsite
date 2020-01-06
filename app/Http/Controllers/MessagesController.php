@@ -16,6 +16,12 @@ class MessagesController extends Controller
     {
         return view('Messages.home');
     }
+
+    public function getMessages(){
+        $messages = Message::all();
+
+        return view('Messages.messages') -> with('messages', $messages);
+    }
     
     public function submit(Request $request){
         $this->validate($request, [
@@ -36,11 +42,5 @@ class MessagesController extends Controller
 
         //Redirect
         return redirect('/home#contact') -> with('success', 'Message sent');
-    }
-
-    public function getMessages(){
-        $messages = Message::all();
-
-        return view('Messages.messages') -> with('messages', $messages);
     }
 }

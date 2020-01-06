@@ -63,6 +63,7 @@ docker push 532455232612.dkr.ecr.eu-west-2.amazonaws.com/basicwebsite/nginx:late
 -   Connect Laravel to Docker with all the right containers needed -> done!
 -   Use a good Mark-up CSS Text-code -> done!
 -   Create a redirect for the ADMIN_ONLY to see the messages. -> done!
+-   Added Blogpost with delete, create and edit functions. -> done!
 -   ...
 
 #### Part 2:  Python-REST (Currencyexchanger)

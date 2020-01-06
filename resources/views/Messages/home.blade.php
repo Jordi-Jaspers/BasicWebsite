@@ -60,6 +60,9 @@
 										<span class="icon solid fa-inbox">Messages</span>
 										</a>
 									@endif	
+										<a class="dropdown-item" href="/blog" id="BlogPost-link">
+										<span class="icon solid fa-blog">Blog</span>
+										</a>
 
 										<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
 										<span class="icon solid fa-sign-out-alt">{{ __('Logout') }}</span>
