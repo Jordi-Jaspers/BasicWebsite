@@ -30,7 +30,6 @@
 						<ul>
 							<li><a href="#top" id="top-link"><span class="icon solid fa-home">Homepage</span></a></li>
 							<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-							<li><a href="#webapplication" id="webapplication-link"><span class="icon fa-window-restore">Web-Application</span></a></li>
 							<li><a href="#about" id="about-link"><span class="icon solid fa-address-card">About Me</span></a></li>
 							<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 						</ul>
@@ -98,7 +97,7 @@
 									class="label">LinkedIn</span></a></li>
 						<li><a href="https://github.com/Jordi-Jaspers" class="icon brands fa-github"><span
 									class="label">Github</span></a></li>
-						<li><a href="https://www.slideshare.net/slideshow/embed_code/key/BVNCamDQU5umn7" class="icon solid fa-file"><span
+						<li><a href="/resume" class="icon solid fa-file"><span
 									class="label">Resume</span></a></li>
 						<li><a href="mailto:jordijaspers@gmail.com" class="icon solid fa-envelope"><span 
 									class="label">Email</span></a></li>
@@ -129,7 +128,7 @@
 											class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/Jordi-Jaspers" class="icon brands fa-github"><span
 											class="label">Github</span></a></li>
-								<li><a href="https://www.slideshare.net/slideshow/embed_code/key/BVNCamDQU5umn7"
+								<li><a href="/resume"
 										class="icon solid fa-file"><span class="label">Resume</span></a></li>
 								<li><a href="mailto:jordijaspers@gmail.com" class="icon solid fa-envelope"><span
 											class="label">Email</span></a>
@@ -232,23 +231,6 @@
 					</div>
 				</section>
 
-			<!-- Web-Application -->
-			<section id="webapplication" class="three">
-					<div class="container">
-
-						<header>
-							<h2>Web-Application</h2>
-						</header>
-
-						<p>This web-application is called "CurrencyExchanger" and makes use of the Rapid Currency API. The applet is built with different REST & SOAP-services</p>
-
-						<footer>
-								<a href="http://127.0.0.1:5000/CurrencyExchanger" class="button scrolly">Go to Web-Application</a>
-						</footer>
-
-					</div>
-				</section>
-
 			<!-- About Me -->
 				<section id="about" class="four">
 					<div class="container">
@@ -257,10 +239,13 @@
 							<h2>About Me</h2>
 						</header>
 
-						<p>Never the greatest student at school, but I love creating/learning through projects that interest me. Over the years I
-						have taught myself multiple new things. I have spend a lot of time developing software & building electronic circuits.
-						To fund my studies and projects, I work part-time next to my education. I've been catering and working in tech-related
-						businesses since 2010. These different jobs have given me experience in multiple sectors.</p>
+						<p>	
+							Never the greatest student at school, but I love creating/learning through projects that interest me. 
+							Over the years I have taught myself multiple new things. I have spent a lot of time developing software
+							& building electronic circuits. To fund my studies and projects, I work full-time next to my education. 
+							I've been catering and working in tech-related businesses since 2010. These different jobs have given me 
+							experience in multiple different sectors.
+						</p>
 
 						<div class="box1">
 							<summary>
@@ -271,6 +256,7 @@
 								<li>English - C2 Level</li>
 								<li>French - B2 Level</li>
 								<li>German - A1 Level</li>
+								<!-- <li>Korean - A1 Level</li> -->
 							</ul>
 						</div>
 
@@ -279,12 +265,15 @@
 								<h3>Software Development</h3>
 							</summary>
 							<ul>
-								<li>Java/Python Automation and logic design</li>
-								<li>Basic Labview Automation</li>
-								<li>Verilog/VHDL FPGA programming</li>
-								<li>Low level C & C++ Experience</li>
-								<li>HTML & CSS basic website design</li>
-								<li>Usage of Amazon Web Services</li>
+								<li>Java, Labview - Automation and logic design</li>
+								<li>Python - RESTful APIs & automation</li>
+								<li>Verilog & VHDL - FPGA programming</li>
+								<li>Low level C & C++ - Basics & Arduino experience</li>
+								<li>Laravel, HTML & CSS - basic web design</li>
+								<li>MySQL - Database experiences</li>
+								<li>Vue.js, Javascript - web development & design</li>
+								<li>Docker services - container technologies</li>
+								<li>Amazon Web Services - Certificates</li>
 							</ul>
 						</div>
 
@@ -293,14 +282,14 @@
 								<h3>Diplomas</h3>
 							</summary>
 							<ul>
-								<li>Sin Moo Hapkido: 3th dan Black Belt - Official Trainer</li>
-								<li>Technical Institute Sparrendal: VCA Certificate – Safety On The Workfloor</li>
-								<li>Technical Institute Sparrendal: ICT Certificate – Usage Of MS Office</li>
-								<li>Technical Institute Sparrendal: Secundairy Education Certificate - Engineering Science</li>
-								<li>Technical Institute Sparrendal: PXL nomination – Tech Award 2015</li>
+								<li>Sin Moo Hapkido: 3th dan Black Belt</li>
+								<li>Technical Institute Sparrendal: VCA Certificate</li>
+								<li>Technical Institute Sparrendal: Engineering Science</li>
+								<li>Technical Institute Sparrendal: Tech Award 2015</li>
+								<li>Technical Institute Sparrendal: MSOffice Certificate</li>
 								<li>LIMTECH: Basic Hydraulics & Pneumatics Certificate</li>
-								<li>UHasselt/KULeuven: Bachelor Electronic & Software Engineering</li>
-								<li>UHasselt/KULeuven: Masters Electronic & Software Engineering</li>
+								<li>KULeuven: Bsc. Electronic & Software Engineering</li>
+								<li>KULeuven: Msc. Electronic & Software Engineering</li>
 								<li>Amazon: Multiple Amazon Web Services certificates</li>
 							</ul>
 						</div>	
@@ -354,7 +343,7 @@
 </div>
 
 	<!-- Footer -->
-		<div id="footer">
+		<div id="footer" class="six">
 			<!-- Copyright -->
 				<ul class="copyright">
 					<li>&copy; Jordi Jaspers. All rights reserved.</li>

@@ -111,6 +111,10 @@ abbr[data-original-title] {
           text-decoration-skip-ink: none;
 }
 
+center-text{
+  align-self: center;
+}
+
 address {
   margin-bottom: 1rem;
   font-style: normal;

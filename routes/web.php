@@ -24,6 +24,9 @@ Route::name('update_blog') -> put('/blog/update/{id}', 'BlogController@update');
 Route::name('delete_blog') -> delete('/blog/delete/{id}', 'BlogController@delete');
 
 Route::get('/dashboard', 'DashboardController@index');
+Route::get('/resume', 'ResumeController@getResume');
 Route::get('/logout', 'Auth\LoginController@logout');
+
+
 
 Auth::routes();
