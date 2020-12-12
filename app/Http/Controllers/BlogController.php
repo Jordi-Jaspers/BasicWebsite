@@ -9,12 +9,12 @@ class BlogController extends Controller
 {
     
     public function createPost(){
-        return view('Messages.create');
+        return view('pages.Blog.create');
     }
 
     public function getBlog(){
         $blogs = Blog::all();
-        return view('Messages.blog') -> with('blogs', $blogs);
+        return view('pages.Blog.blog') -> with('blogs', $blogs);
     }
 
     public function delete($id){
@@ -28,7 +28,7 @@ class BlogController extends Controller
     public function edit($id){
         $blog = Blog::find($id);
 
-        return view('Messages.edit', ['blog' => $blog]) ;
+        return view('pages.Blog.edit', ['blog' => $blog]) ;
     }
 
     public function update(Request $request, $id){

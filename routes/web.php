@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/home' , 'MessagesController@home');
-Route::get('/messages', 'MessagesController@getMessages');
-Route::post('/home/submit', 'MessagesController@submit');
+Route::get('/home' , 'HomePageController@home');
+Route::get('/home/resume', 'HomePageController@resume');
+Route::get('/home/resume/download', 'HomePageController@getPDF');
+Route::post('/home/submit', 'HomePageController@submit');
+Route::get('/home/messages', 'HomePageController@getMessages');
+Route::name('delete_message') -> delete('home/message/delete/{id}', 'HomePageController@delete');
+Route::name('deleteAll_messages') -> delete('home/message/deleteall/', 'HomePageController@deleteAll');
 
 Route::get('/blog/create', 'BlogController@createPost');
 Route::get('/blog', 'BlogController@getBlog');
@@ -24,7 +28,7 @@ Route::name('update_blog') -> put('/blog/update/{id}', 'BlogController@update');
 Route::name('delete_blog') -> delete('/blog/delete/{id}', 'BlogController@delete');
 
 Route::get('/dashboard', 'DashboardController@index');
-Route::get('/resume', 'ResumeController@getResume');
+
 Route::get('/logout', 'Auth\LoginController@logout');
 
 

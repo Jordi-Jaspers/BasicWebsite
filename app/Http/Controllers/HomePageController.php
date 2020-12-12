@@ -5,22 +5,48 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Message;
 
-class MessagesController extends Controller
+class HomePageController extends Controller
 {
      /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function home()
-    {
-        return view('Messages.home');
+    public function home(){
+        return view('pages.Home.home');
+    }
+
+    public function resume(){
+        return view('pages.Home.resume');
+    }
+
+    public function getPDF(){
+        $file = "/PDF/Resume_JORDI_JASPERS.pdf";
+        return response()->download(public_path($file), 'Resume_JORDI_JASPERS.pdf');
     }
 
     public function getMessages(){
         $messages = Message::all();
 
-        return view('Messages.messages') -> with('messages', $messages);
+        return view('pages.Home.messages') -> with('messages', $messages);
+    }
+
+    public function delete($id){
+        $message = Message::find($id);
+
+        $message->delete();
+
+        return redirect('/home/messages') -> with('deleted', 'Message deleted');
+    }
+
+    public function deleteAll(){
+        $messages = Message::all();
+
+        foreach ($messages as &$message) {
+            $message->delete();
+        } 
+        
+        return redirect('/home/messages') -> with('deleted', 'Messages deleted');
     }
     
     public function submit(Request $request){

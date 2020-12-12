@@ -21,8 +21,8 @@
 					<div id="logo">
 						<span class="image avatar48"><img src="images/avatar.png" alt="" /></span>
 						<h1 id="title">Jordi Jaspers</h1>
-						<p>Electronic & Software </p>
-						<p>Engineer</p>
+						<p>MSc. Electronic & Software </p>
+						<p>Engineering</p>
 					</div>
 
 				<!-- Nav -->
@@ -55,7 +55,7 @@
                                 </a>
 									<div id="myDropdown" class="dropdown-content" >
 									@if (Auth::user()->id == 1)
-										<a class="dropdown-item" href="/messages" id="messages-link">
+										<a class="dropdown-item" href="/home/messages" id="messages-link">
 										<span class="icon solid fa-inbox">Messages</span>
 										</a>
 									@endif	
@@ -97,7 +97,7 @@
 									class="label">LinkedIn</span></a></li>
 						<li><a href="https://github.com/Jordi-Jaspers" class="icon brands fa-github"><span
 									class="label">Github</span></a></li>
-						<li><a href="/resume" class="icon solid fa-file"><span
+						<li><a href="/home/resume" class="icon solid fa-file"><span
 									class="label">Resume</span></a></li>
 						<li><a href="mailto:jordijaspers@gmail.com" class="icon solid fa-envelope"><span 
 									class="label">Email</span></a></li>
@@ -111,11 +111,11 @@
 			<!-- Intro -->
 				<section id="top" class="one dark cover">
 					<div class="container">
-
+					
 						<header>
 							<h2 class="alt"><strong>Jordi Jaspers</strong></h2>
 							<p>Self-learning software developer through research & development. 
-							Electronic & software engineering student at UHasselt | KULeuven</p>
+							Graduated MSc. Electronic & software engineering student at UHasselt | KULeuven</p>
 						</header>
 
 						<div class="bottom">
@@ -128,8 +128,8 @@
 											class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/Jordi-Jaspers" class="icon brands fa-github"><span
 											class="label">Github</span></a></li>
-								<li><a href="/resume"
-										class="icon solid fa-file"><span class="label">Resume</span></a></li>
+								<li><a href="/home/resume" class="icon solid fa-file"><span 
+											class="label">Resume</span></a></li>
 								<li><a href="mailto:jordijaspers@gmail.com" class="icon solid fa-envelope"><span
 											class="label">Email</span></a>
 								</li>
@@ -256,7 +256,7 @@
 								<li>English - C2 Level</li>
 								<li>French - B2 Level</li>
 								<li>German - A1 Level</li>
-								<!-- <li>Korean - A1 Level</li> -->
+								<li>Korean - A1 Level</li>
 							</ul>
 						</div>
 

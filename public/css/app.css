@@ -2849,6 +2849,11 @@ textarea.form-control.is-invalid {
   }
 }
 
+.float {
+  display: inline-block;
+  margin-right:5000px;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -5277,6 +5282,14 @@ input[type=button].btn-block {
           flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .card-title {

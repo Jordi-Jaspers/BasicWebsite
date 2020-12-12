@@ -62,7 +62,7 @@
                                     </a>
 
                                     @if (Auth::user()->id == 1)
-										<a class="dropdown-item" href="/messages" id="messages-link">
+										<a class="dropdown-item" href="/home/messages" id="messages-link">
 										<span class="icon solid fa-inbox">Messages</span>
 										</a>
 									@endif	
